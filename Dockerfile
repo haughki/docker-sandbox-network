@@ -1,3 +1,7 @@
+# Build an image based on Linux Alpine. Pass a network configuration shell script as an argument to the script,
+# then convert this argument into an environment variable so that we can 
+# run it later as the ENTRYPOINT.
+
 FROM alpine
 
 ARG network_config_arg
